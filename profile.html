@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Varaldevi Lake</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: 'Play', sans-serif;
+        }
+        .profile {
+            padding: 30px 0;
+        }
+        .profile .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff;
+        }
+        .profile .profile-header h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2em;
+            margin-top: 10px;
+        }
+        .profile .profile-header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .profile .profile-info {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .profile .profile-info h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .profile .profile-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="header"></div>
+
+        <!-- Profile Section -->
+        <div class="profile">
+            <div class="profile-header">
+                <img src="profile.png" alt="Profile Picture">
+                <h1>Chirag Malde</h1>
+                <p>Passionate Environmentalist and Nature Enthusiast</p>
+            </div>
+            <div class="profile-info">
+                <h2>About Me</h2>
+                <p>Hello! I'm Chirag Malde, a dedicated environmentalist with a love for nature. I have been actively involved in various conservation projects and community events aimed at preserving our beautiful planet. When I'm not working on environmental initiatives, I enjoy hiking, photography, and exploring new places. My goal is to inspire others to take action and make a positive impact on the environment.</p>
+
+                <h2>Contact Information</h2>
+                <p>Mail me: <a href="mailto:m.chirag2211@gmail.com">m.chirag2211@gmail.com</a></p>
+                <p>Phone: +91 7774040339</p>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="footer"></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html"); // Load the footer HTML
+        });
+    </script>
+</body>
+</html>

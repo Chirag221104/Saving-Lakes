@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Admin Panel</h1>
+        <h2>Update Upcoming Events</h2>
+        <form id="update-events-form" action="/update-content" method="POST">
+            <div class="form-group">
+                <label for="events">Upcoming Events:</label>
+                <textarea id="events" name="events" class="form-control" rows="5" placeholder="Enter new events"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Events</button>
+        </form>
+    </div>
+</body>
+</html>
